@@ -228,9 +228,8 @@ body {
 }
 .navbar-petit .dropdown-item:hover,
 .navbar-petit .dropdown-item:focus {
-  color: var(--yellow);
+  color: var(--primary);
   text-decoration: none;
-  background-color: var(--primary);
 }
 .navbar-petit .btn-signup {
   color: var(--primary);
@@ -1139,4 +1138,17 @@ p {
 
 #facebook-blog {
   color: var(--yellow);
+}
+
+/* Estilo header pagina veterinario */
+#nav-edit:hover {
+  color: var(--primary);
+  background-color: white;
+  border: 0.1rem solid var(--primary);
+}
+
+#signUp:hover {
+  border: 0.1rem solid var(--primary);
+  color: var(--yellow);
+  background-color: var(--primary);
 }
