@@ -1152,3 +1152,12 @@ p {
   color: var(--yellow);
   background-color: var(--primary);
 }
+#img-vet {
+  width: 140px;
+}
+#change-photo:hover,
+#save-changes:hover {
+  color: white;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
