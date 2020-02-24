@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Blog</title>
+    <title>Veterinario</title>
     <script src="./js/all.js"></script>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -33,40 +33,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSignup">
           <ul class="navbar-nav ml-auto" id="options">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html #carouselExampleCaptions"
-                >Inicio <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html #team">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="index.html #contacto">Contacto</a>
-            </li>
             <li class="nav-item dropdown" id="btn-ingresar">
               <a
                 class="btn btn-inicio dropdown-toggle"
                 role="button"
+                id="signUp"
                 data-toggle="dropdown"
                 href="#"
-                >Ingresar</a
+                >Opciones</a
               >
-              <div class="dropdown-menu" aria-labelledby="navbarSignup">
-                <a
-                  class="dropdown-item"
-                  data-toggle="modal"
-                  data-target="#loginUser"
-                  >Iniciar sesión</a
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="./update-user.html"
+                  ><i class="fas fa-user-edit mr-2"></i>Editar Perfil</a
                 >
-                <a
-                  class="dropdown-item"
-                  data-toggle="modal"
-                  data-target="#registerUser"
-                  >Crear cuenta</a
+                <a class="dropdown-item" href="./index.html"
+                  ><i class="fas fa-sign-out-alt mr-2"></i>Cerrar Sesión</a
                 >
               </div>
             </li>
@@ -74,179 +55,6 @@
         </div>
       </div>
     </nav>
-
-    <br id="navbar-header" />
-
-    <h1 id="title">Blog</h1>
-    <hr id="line-title" />
-
-    <div class="container-fluid">
-      <div class="row" id="first">
-        <div class="col-12 col-md-4 d-flex align-items-stretch">
-          <div class="card">
-            <img
-              src="./assets/JPG/dog-joint.jpg"
-              class="card-img-top"
-              id="img-blog"
-            />
-            <div class="card-body">
-              <hr id="line-cards" />
-              <h5 class="card-title">How To Keep Your Dogs Joints Healthy</h5>
-              <h6 id="author">
-                21 enero 2019
-                <li>author a.</li>
-              </h6>
-              <p class="card-text">
-                Normal wear and tear on joints occurs daily. Cartilage protects
-                your dog’s bones and joints from the friction caused by everyday
-                movement...
-              </p>
-              <a href="blog-example.html" class="btn btn-primary" id="btn">
-                Leer más
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 d-flex align-items-stretch">
-          <div class="card">
-            <img
-              src="./assets/JPEG/dog-car-safety.jpg"
-              class="card-img-top"
-              alt="..."
-              id="img-blog"
-            />
-            <div class="card-body">
-              <hr id="line-cards" />
-              <h5 class="card-title">Dog Car Safety Tips</h5>
-              <h6 id="author">
-                21 ENERO, 2020
-                <li>Author.A</li>
-              </h6>
-
-              <p class="card-text">
-                It doesn’t matter if it’s a long road trip or a short drive to
-                the dog park; it’s important to properly secure your dog in the
-                car...
-              </p>
-              <a href="blog-example2.html" class="btn btn-primary" id="btn">
-                Leer más
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 d-flex align-items-stretch">
-          <div class="card">
-            <img
-              src="./assets/JPEG/adopt-a-dog.jpg"
-              class="card-img-top"
-              alt="..."
-              id="img-blog"
-            />
-            <div class="card-body">
-              <hr id="line-cards" />
-              <h5 class="card-title">How to Adopt a Dog</h5>
-              <h6 id="author">
-                21 ENERO, 2020
-                <li>Author.A</li>
-              </h6>
-              <p class="card-text">
-                Adopting a dog is a big step. There are a lot of things to
-                consider, from choosing the right one for...
-              </p>
-              <a href="blog-example3.html" class="btn btn-primary" id="btn">
-                Leer más
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="d-flex" id="column2">
-      <div class="container-fluid">
-        <div class="row" id="first">
-          <div class="col-12 col-md-4 d-flex align-items-stretch">
-            <div class="card">
-              <img
-                src="./assets/JPEG/itchy-lab.jpg"
-                class="card-img-top"
-                alt="..."
-                id="img-blog"
-              />
-              <div class="card-body">
-                <hr id="line-cards" />
-                <h5 class="card-title">Why Do Dogs Have Itchy Ears?</h5>
-                <h6 id="author">
-                  21 ENERO, 2020
-                  <li>Author.A</li>
-                </h6>
-                <p class="card-text">
-                  Don’t just assume your dog’s ears itch if he scratches them
-                  frequently. It may be a sign of a painful infection...
-                </p>
-                <a href="blog-example4.html" class="btn btn-primary" id="btn">
-                  Leer más
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 d-flex align-items-stretch">
-            <div class="card">
-              <img
-                src="./assets/JPEG/dry-skin.jpg"
-                class="card-img-top"
-                alt="..."
-                id="img-blog"
-              />
-              <div class="card-body">
-                <hr id="line-cards" />
-                <h5 class="card-title">What to Do If Your Dog Has Dry Skin</h5>
-                <h6 id="author">
-                  21 ENERO, 2020
-                  <li>Author.A</li>
-                </h6>
-                <p class="card-text">
-                  You’re not the only one who suffers from dry skin in the
-                  winter. When the heat comes on more frequently in the house,
-                  your pet may also become itchy...
-                </p>
-                <a href="blog-example5.html" class="btn btn-primary" id="btn">
-                  Leer más
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 d-flex align-items-stretch ">
-            <div class="card">
-              <img
-                src="./assets/JPEG/food.jpg"
-                class="card-img-top"
-                alt="..."
-                id="img-blog"
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  <hr id="line-cards" />
-                  Dog Nutrition Basics - Essential Health Nutrients
-                </h5>
-                <h6 id="author">
-                  21 ENERO, 2020
-                  <li>Author.A</li>
-                </h6>
-                <p class="card-text">
-                  Your dog’s nutritional health depends on receiving the correct
-                  amounts and proportions of nutrients from the six required
-                  groups: ...
-                </p>
-                <a href="blog-example6.html" class="btn btn-primary" id="btn">
-                  Leer más
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <footer>
       <ul class="footer-links">
@@ -576,5 +384,3 @@
     <script src="./js/main.js"></script>
   </body>
 </html>
-
-<!--<?php include "./footer.html" ?>Se manda llamara la pagina de footer mediante php-->
