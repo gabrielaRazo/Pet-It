@@ -1,4 +1,3 @@
-<!--<?php include "./header.html" ?>Se manda llamara la pagina de header mediante php-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,6 +11,11 @@
       href="./assets/icono-petit.png"
       type="image/x-icon"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="navbar navbar-petit navbar-expand-md" id="navbarPetit_blog">
@@ -33,21 +37,40 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSignup">
           <ul class="navbar-nav ml-auto" id="options">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html #carouselExampleCaptions"
+                >Inicio <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html #team">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="index.html #contacto">Contacto</a>
+            </li>
             <li class="nav-item dropdown" id="btn-ingresar">
               <a
                 class="btn btn-inicio dropdown-toggle"
                 role="button"
-                id="signUp"
                 data-toggle="dropdown"
                 href="#"
-                >Opciones</a
+                >Ingresar</a
               >
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="./update-user.html"
-                  ><i class="fas fa-user-edit mr-2"></i>Editar Perfil</a
+              <div class="dropdown-menu" aria-labelledby="navbarSignup">
+                <a
+                  class="dropdown-item"
+                  data-toggle="modal"
+                  data-target="#loginUser"
+                  >Iniciar sesión</a
                 >
-                <a class="dropdown-item" href="./index.html"
-                  ><i class="fas fa-sign-out-alt mr-2"></i>Cerrar Sesión</a
+                <a
+                  class="dropdown-item"
+                  data-toggle="modal"
+                  data-target="#registerUser"
+                  >Crear cuenta</a
                 >
               </div>
             </li>
@@ -55,7 +78,108 @@
         </div>
       </div>
     </nav>
-
+    <br id="navbar-header" />
+    <script src="./js/vet.js"></script>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="./assets/PNG/veterinario.png" class="img-thumbnail" />
+        </div>
+        <div class="col">
+          <label class="col-12 title-pet">Nombre:</label>
+          <label id="name-vet" class="col-12 info-pet"></label>
+          <label class="col-12 title-pet">Username:</label>
+          <label id="username-vet" class="col-12 info-pet"></label>
+          <label class="col-12 title-pet">Email:</label>
+          <label id="email-vet" class="col-12 info-pet"></label>
+          <label class="col-12 title-pet">Descripción:</label>
+          <label id="description-vet" class="col-12 info-pet"></label>
+        </div>
+        <div>
+          <button type="button" class="btn btn-info">Editar Perfil</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="mb-2"><b>Tus servicios</b></div>
+          <div class="row">
+            <div class="col">
+              <div class="custom-controls-stacked px-2">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="notifications-address"
+                  />
+                  <label
+                    class="custom-control-label"
+                    for="notifications-address"
+                    >Servicio a domicilio</label
+                  >
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="notifications-appointment"
+                    checked=""
+                  />
+                  <label
+                    class="custom-control-label"
+                    for="notifications-appointment"
+                    >Consulta</label
+                  >
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="notifications-surgery"
+                    checked=""
+                  />
+                  <label
+                    class="custom-control-label"
+                    for="notifications-surgery"
+                    >Cirugía</label
+                  >
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="notifications-dog-grooming"
+                  />
+                  <label
+                    class="custom-control-label"
+                    for="notifications-dog-grooming"
+                    >Estética</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <button type="button" id="access1" class="btn btn-info">
+          Acceder a calendario
+        </button>
+      </div>
+      <div class="row">
+        <button type="button" id="access2" class="btn btn-info">
+          Acceder a mis pacientes
+        </button>
+      </div>
+      <div class="row">
+        <button type="button" id="access3" class="btn btn-info">
+          Acceder a mis clientes
+        </button>
+      </div>
+    </div>
     <footer>
       <ul class="footer-links">
         <li><a href="#">Inicio</a></li>
