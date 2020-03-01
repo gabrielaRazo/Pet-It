@@ -1249,9 +1249,17 @@ p {
   color: var(--primary);
   border-color: var(--primary);
 }
+/* #access1,
+#access2,
+#access3 {
+  width: 150px;
+  height: 50px;
+} */
+
 #access1:hover,
 #access2:hover,
-#access3:hover {
+#access3:hover,
+#btn-edit:hover {
   background-color: var(--primary);
   color: white;
   border-color: var(--primary);
@@ -1262,4 +1270,23 @@ p {
   background-color: white;
   color: var(--primary);
   border-color: var(--primary);
+}
+#calendar {
+  width: 10px;
+}
+#card-vet {
+  margin: 40px;
+}
+#image-vet {
+  width: 400px;
+  height: auto;
+}
+#btn-edit {
+  background-color: white;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+#information {
+  margin: 0px;
+  padding: 0px;
 }
