@@ -60,40 +60,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSignup">
           <ul class="navbar-nav ml-auto" id="options">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html #carouselExampleCaptions"
-                >Inicio <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html #team">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="index.html #contacto">Contacto</a>
-            </li>
             <li class="nav-item dropdown" id="btn-ingresar">
               <a
                 class="btn btn-inicio dropdown-toggle"
                 role="button"
+                id="signUp"
                 data-toggle="dropdown"
                 href="#"
-                >Ingresar</a
+                >Opciones</a
               >
-              <div class="dropdown-menu" aria-labelledby="navbarSignup">
-                <a
-                  class="dropdown-item"
-                  data-toggle="modal"
-                  data-target="#loginUser"
-                  >Iniciar sesión</a
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="./update-user.html"
+                  ><i class="fas fa-user-edit mr-2"></i>Editar Perfil</a
                 >
-                <a
-                  class="dropdown-item"
-                  data-toggle="modal"
-                  data-target="#registerUser"
-                  >Crear cuenta</a
+                <a class="dropdown-item" href="./index.html"
+                  ><i class="fas fa-sign-out-alt mr-2"></i>Cerrar Sesión</a
                 >
               </div>
             </li>
@@ -101,7 +82,6 @@
         </div>
       </div>
     </nav>
-    <br id="navbar-header" />
     <script src="./js/vet.js"></script>
     <div class="card" id="card-vet">
       <div class="card-body">
@@ -214,6 +194,7 @@
         </div>
       </div>
     </div>
+
     <script src="./js/pet-photo.js"></script>
     <script src="./js/dogBreedAPI.js"></script>
     <script src="./js/simple-select.js"></script>
