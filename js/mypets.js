@@ -24,7 +24,7 @@ var data = [
 
 function petButtonVaccines(value) {
   var btnVaccines =
-    '<button type="button" onclick="window.location.href =\'/index.html?petId=' +
+    '<button type="button" onclick="window.location.href =\'/book-pet.html?petId=' +
     value +
     '\';" class="btn btn-outline-primary">VER  <i class="fas fa-eye"></i> </button>';
   return btnVaccines;

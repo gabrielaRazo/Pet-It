@@ -1271,11 +1271,18 @@ p {
   color: var(--primary);
   border-color: var(--primary);
 }
+#access2,
+#access3,
+#access1 {
+  margin-left: 10px;
+}
 #calendar {
   width: 10px;
 }
 #card-vet {
-  margin: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
 }
 #image-vet {
   width: 400px;
@@ -1289,4 +1296,9 @@ p {
 #information {
   margin: 0px;
   padding: 0px;
+}
+/* Estilo blog en index */
+#size {
+  width: 85%;
+  height: 200%;
 }
